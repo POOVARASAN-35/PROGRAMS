@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        double sum=result(N);
+    }
+    public static double result(int N) {
+        double sum= 0;
+        double t = 0;
+        for (int i = 1; i <= N; i++) {
+            t+= i;
+            double term = i /t;
+            sum += term;
+        }
+         double r = Math.round(sum* 1000.0) / 1000.0;
+         System.out.println(r);
+         return sum;
+    }
+}
