@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int n= sc.nextInt();
+     double s=0;
+     double sum;
+      for(int i=1;i<=n;i++){
+         sum=i/(i+1);
+       s+=sum;
+      }
+      double r = Math.round(s * 1000.0) / 1000.0;
+      System.out.println(r);
+      
+      }
+  
+}
